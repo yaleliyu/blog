@@ -1,9 +1,9 @@
 baseURL = "https://yaleliyu.github.io/blog/"
 title = "Yale Li Yu"
 theme = "PaperMod"
-
 languageCode = "en-gb"
 defaultContentLanguage = "en"
+
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -17,83 +17,31 @@ buildExpired = false
 
 [params]
   author = "Yale Li Yu"
-  description = "Applied Machine Learning, LLM Systems, and Quantitative Research"
-  keywords = ["Machine Learning", "LLM", "Quantitative Investment", "RAG", "AI Engineering"]
+  description = "Applied Machine Learning, LLM Systems, and Software Engineering"
+  keywords = ["Machine Learning", "LLM", "Software Engineering", "AI Engineering"]
+
   defaultTheme = "auto"
+
+  # show blog posts on homepage
+  mainSections = ["posts"]
+
+  # professional technical blog settings
   ShowReadingTime = true
-  ShowShareButtons = false
-  ShowCodeCopyButtons = true
-  ShowPostNavLinks = true
+  ShowWordCount = true
   ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  disableScrollToTop = false
-  comments = false
+  ShowPostNavLinks = true
+  ShowShareButtons = false
   hideSummary = false
-  mainSections = ["posts", "research", "projects"]
 
-[params.homeInfoParams]
-  Title = "Applied Machine Learning & Quantitative Research"
-  Content = """
-I build machine learning systems, explore LLM applications,
-and experiment with quantitative investment strategies.
-
-This site contains:
-- LLM engineering experiments
-- Machine learning research notes
-- Quantitative strategy exploration
-- Technical project breakdowns
-"""
-
-[params.assets]
-  disableHLJS = false
-
-[params.cover]
-  hidden = true
-
-[params.editPost]
-  URL = "https://github.com/yaleliyu/blog/tree/main/content"
-  Text = "Suggest Changes"
-  appendFilePath = true
-
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/yaleliyu"
-
-
-[[params.socialIcons]]
-name = "rss"
-url = "/index.xml"
-
-
-
-[menu]
-
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "posts"
-    name = "Blog"
-    url = "/posts/"
-    weight = 20
-
-  [[menu.main]]
-    identifier = "research"
-    name = "Research"
-    url = "/research/"
-    weight = 30
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
+# ONLY top-right navigation item
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
 
 [markup]
 
@@ -114,7 +62,3 @@ url = "/index.xml"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-[services]
-  [services.googleAnalytics]
-    ID = ""
