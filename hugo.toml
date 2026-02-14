@@ -1,4 +1,122 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://yaleliyu.github.io/blog/"
+title = "Yale Li Yu"
 theme = "PaperMod"
+
+languageCode = "en-gb"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  author = "Yale Li Yu"
+  description = "Applied Machine Learning, LLM Systems, and Quantitative Research"
+  keywords = ["Machine Learning", "LLM", "Quantitative Investment", "RAG", "AI Engineering"]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = false
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  disableScrollToTop = false
+  comments = false
+  hideSummary = false
+  mainSections = ["posts", "research", "projects"]
+
+[params.homeInfoParams]
+  Title = "Applied Machine Learning & Quantitative Research"
+  Content = """
+I build machine learning systems, explore LLM applications,
+and experiment with quantitative investment strategies.
+
+This site contains:
+- LLM engineering experiments
+- Machine learning research notes
+- Quantitative strategy exploration
+- Technical project breakdowns
+"""
+
+[params.assets]
+  disableHLJS = false
+
+[params.cover]
+  hidden = true
+
+[params.editPost]
+  URL = "https://github.com/yaleliyu/blog/tree/main/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+[params.socialIcons]
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yaleliyu"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+[markup]
+
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[services]
+  [services.googleAnalytics]
+    ID = ""
