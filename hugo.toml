@@ -58,18 +58,19 @@ This site contains:
   Text = "Suggest Changes"
   appendFilePath = true
 
-[params.socialIcons]
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/yaleliyu"
+[[params.socialIcons]]
+name = "github"
+url = "https://www.linkedin.com/in/yale-li-5a083221/?locale=en_US"
 
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://linkedin.com"
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com"
 
-  [[params.socialIcons]]
-    name = "rss"
-    url = "/index.xml"
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+
 
 [menu]
 
