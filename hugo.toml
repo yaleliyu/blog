@@ -1,5 +1,5 @@
 baseURL = "https://yaleliyu.github.io/"
-title = "Yale Li Yu"
+title = "Yale Li"
 theme = "PaperMod"
 languageCode = "en-gb"
 defaultContentLanguage = "en"
@@ -16,7 +16,7 @@ buildExpired = false
   disableXML = true
 
 [params]
-  author = "Yale Li Yu"
+  author = "Yale Li"
   description = "Applied Machine Learning, LLM Systems, and Software Engineering"
   keywords = ["Machine Learning", "LLM", "Software Engineering", "AI Engineering"]
 
