@@ -60,11 +60,8 @@ This site contains:
 
 [[params.socialIcons]]
 name = "github"
-url = "https://www.linkedin.com/in/yale-li-5a083221/?locale=en_US"
+url = "https://github.com/yaleliyu"
 
-[[params.socialIcons]]
-name = "linkedin"
-url = "https://linkedin.com"
 
 [[params.socialIcons]]
 name = "rss"
