@@ -1,10 +1,8 @@
 ---
 title: "Building a Quant & ML Blog: A Step-by-Step Guide with Hugo and GitHub"
-date: 2026-02-14T10:00:00+08:00
+date: 2026-02-14
 draft: false
-description: "A technical walkthrough of how I built this blog using Hugo and GitHub Actions to share my journey in Machine Learning and Quantitative Finance."
 tags: ["Hugo", "GitHub Pages", "Quant", "ML", "Technical Writing"]
-categories: ["Tutorials"]
 ---
 
 Welcome to my first post! As I embark on my journey through **Machine Learning (ML)** and **Quantitative Finance**, I realized that the best way to consolidate my learning is to build a professional "digital garden." 
